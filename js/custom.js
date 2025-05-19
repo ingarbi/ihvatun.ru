@@ -13,7 +13,7 @@
           slides: [
               { src: 'images/slides/first.jpg' },
               { src: 'images/slides/second.jpg' },
-              { src: 'images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg' }
+              { src: 'images/slides/Visit.jpg' }
           ],
           timer: false,
           animation: 'kenburns',
