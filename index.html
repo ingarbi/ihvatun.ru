@@ -1,31 +1,71 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description"
+        content="Ихватун - сеть уютных ресторанов в Ингушетии (Назрань, Сунжа). Предлагаем вкуснейшую шаурму, гиро, донар, куры-гриль и многое другое. Открыты с 2016 года.">
+    <meta name="author" content="Ихватун">
 
     <title>Ихватун - Главная</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;1,200;1,700&display=swap"
         rel="stylesheet">
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <link href="css/bootstrap-icons.css" rel="stylesheet">
-
     <link href="css/vegas.min.css" rel="stylesheet">
-
     <link href="css/tooplate-barista.css" rel="stylesheet">
 
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Restaurant",
+          "name": "Ихватун",
+          "description": "Сеть ресторанов в Ингушетии, предлагающая шаурму, гиро, донар и другие блюда.",
+          "image": "https://www.ihvatun.ru/images/coffee-beans.png", // Замените на URL вашего логотипа или основного изображения
+          "url": "https://www.ihvatun.ru/"
+          "telephone": "+79287340803",
+          "servesCuisine": ["Шаурма", "Гиро", "Донар", "Куры-гриль"], 
+          "address": [
+            {
+              "@type": "PostalAddress",
+              "streetAddress": "улица Муталиева, д. 86",
+              "addressLocality": "Назрань",
+              "addressRegion": "Ингушетия",
+              "addressCountry": "RU"
+            },
+            {
+              "@type": "PostalAddress",
+              "streetAddress": "улица Осканова, д. 23А",
+              "addressLocality": "Сунжа",
+              "addressRegion": "Ингушетия",
+              "addressCountry": "RU"
+            }
+          ],
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+              ],
+              "opens": "11:00",
+              "closes": "23:00"
+            }
+          ],
+          "menu": "https://www.ihvatun.ru/#menu" 
+        }
+    </script>
 </head>
 
 <body>
@@ -34,7 +74,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="images/coffee-beans.png" class="navbar-brand-image img-fluid" alt="Barista Cafe Template">
+                    <img src="images/ибрагим" class="navbar-brand-image img-fluid" alt="Логотип ресторана Ихватун">
                     Ihvatun.ru
                 </a>
 
@@ -46,20 +86,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_1">Главная</a>
+                            <a class="nav-link click-scroll" href="#home">Главная</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">О нас</a>
+                            <a class="nav-link click-scroll" href="#about">О нас</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Меню</a>
+                            <a class="nav-link click-scroll" href="#menu">Меню</a>
                         </li>
 
-
                         <li class="nav-item">
-                            <a class="nav-link click-scroll custom-btn custom-border-btn" href="#section_4">Контакты<i class="bi-arrow-up-right ms-2"></i></a>
+                            <a class="nav-link click-scroll  custom-border-btn" href="#section_4">Контакты<i
+                                    class="bi-arrow-up-right ms-2"></i></a>
                         </li>
                     </ul>
 
@@ -68,7 +108,7 @@
         </nav>
 
 
-        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+        <section class="hero-section d-flex justify-content-center align-items-center" id="home">
 
             <div class="container">
                 <div class="row align-items-center">
@@ -82,11 +122,11 @@
                             сеть <em>ресторанов</em> в Ингушетии.
                         </p>
 
-                        <a class="btn custom-btn custom-border-btn smoothscroll me-3" href="#section_2">
-                            Наша история
+                        <a class="btn custom-btn custom-border-btn-wa smoothscroll me-3 p-2" href="#footer">
+                            <strong class="me-1 bi bi-whatsapp"></strong> Связаться с нами
                         </a>
 
-                        <a class="btn custom-btn smoothscroll me-2 mb-2" href="#section_3"><strong>Перейти в
+                        <a class="btn custom-btn smoothscroll me-2 p-2" href="#menu"><strong>Перейти в
                                 меню</strong></a>
                     </div>
 
@@ -97,14 +137,14 @@
         </section>
 
 
-        <section class="about-section section-padding" id="section_2">
+        <section class="about-section section-padding" id="about">
             <div class="section-overlay"></div>
             <div class="container">
                 <div class="row align-items-center">
 
                     <div class="col-lg-6 col-12">
                         <div class="ratio ratio-1x1">
-                            <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                            <video autoplay="" loop="" muted="" class="custom-video" poster="images/Тут тоже.jpg">
                                 <source src="videos/istockphoto-1337454962-640_adpp_is.mp4" type="video/mp4">
 
                                 Если вы видите это сообщение, значит ваш браузер не поддерживает HTML5 видео.
@@ -135,75 +175,75 @@
             </div>
         </section>
 
-        <section class="menu-section section-padding" id="section_3">
+        <section class="menu-section section-padding" id="menu">
             <div class="container">
                 <div class="row">
 
-                            <div class="col-lg-6 col-12 mb-4 mb-lg-0 mx-auto">
-                                <div class="menu-block-wrap">
-                                    <div class="text-center mb-4 pb-lg-2">
-                                        <em class="text-white">Наше меню</em>
-                                    </div>
+                    <div class="col-lg-12 col-12 mb-4 mb-lg-0 mx-auto">
+                        <div class="menu-block-wrap">
+                            <div class="text-center mb-4 pb-lg-2">
+                                <h5><em class="text-white">Наше меню</em></h5>
+                            </div>
 
-                                    <div class="menu-block">
-                                        <div class="d-flex">
-                                            <h6>Шаурма</h6>
-                                            <span class="underline"></span>
-                                        </div>
-                                        <div class="border-top mt-2 pt-2"></div>
-                                    </div>
-
-
-                                    <div class="menu-block my-4">
-                                        <div class="d-flex">
-                                            <h6>Гиро</h6>
-                                                <span class="underline"></span>
-                                        </div>
-                                        <div class="border-top mt-2 pt-2"></div>
-                                    </div>
-
-
-                                    <div class="menu-block">
-                                        <div class="d-flex">
-                                            <h6>Донар
-                                                <span class="badge ms-3">Хит заказов</span>
-                                            </h6>
-                                            <span class="underline"></span>
-                                        </div>
-                                        <div class="border-top mt-2 pt-2"></div>
-                                    </div>
-
-
-                                    <div class="menu-block my-4">
-                                        <div class="d-flex">
-                                            <h6>Куры-гриль на углях</h6>
-                                            <span class="underline"></span>
-                                        </div>
-                                        <div class="border-top mt-2 pt-2"></div>
-                                    </div>
-
-
-                                    <div class="menu-block">
-                                        <div class="d-flex">
-                                            <h6>Картофель фри</h6>
-                                            <span class="underline"></span>
-                                        </div>
-                                        <div class="border-top mt-2 pt-2"></div>
-                                    </div>
-
-
-                                    <div class="menu-block mt-4">
-                                        <div class="d-flex">
-                                            <h6>И многое другое</h6>
-                                            <span class="underline"></span>
-                                        </div>
-                                        <div class="border-top mt-2 pt-2"></div>
-                                    </div>
+                            <div class="menu-block">
+                                <div class="d-flex">
+                                    <h6>Шаурма</h6>
+                                    <span class="underline"></span>
                                 </div>
+                                <div class="border-top mt-2 pt-2"></div>
+                            </div>
+
+
+                            <div class="menu-block my-4">
+                                <div class="d-flex">
+                                    <h6>Гиро</h6>
+                                    <span class="underline"></span>
+                                </div>
+                                <div class="border-top mt-2 pt-2"></div>
+                            </div>
+
+
+                            <div class="menu-block">
+                                <div class="d-flex">
+                                    <h6>Донар
+                                        <span class="badge ms-3">Хит заказов</span>
+                                    </h6>
+                                    <span class="underline"></span>
+                                </div>
+                                <div class="border-top mt-2 pt-2"></div>
+                            </div>
+
+
+                            <div class="menu-block my-4">
+                                <div class="d-flex">
+                                    <h6>Куры-гриль на углях</h6>
+                                    <span class="underline"></span>
+                                </div>
+                                <div class="border-top mt-2 pt-2"></div>
+                            </div>
+
+
+                            <div class="menu-block">
+                                <div class="d-flex">
+                                    <h6>Картофель фри</h6>
+                                    <span class="underline"></span>
+                                </div>
+                                <div class="border-top mt-2 pt-2"></div>
+                            </div>
+
+
+                            <div class="menu-block mt-4">
+                                <div class="d-flex">
+                                    <h6>И многое другое</h6>
+                                    <span class="underline"></span>
+                                </div>
+                                <div class="border-top mt-2 pt-2"></div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+            </div>
+        </section>
 
 
         <section class="contact-section section-padding" id="section_4">
@@ -231,7 +271,7 @@
         </section>
 
 
-        <footer class="site-footer">
+        <footer class="site-footer" id="footer">
             <div class="container">
                 <div class="row">
 
@@ -251,7 +291,7 @@
 
                         <p class="d-flex mb-0">
                             <strong class="me-2 bi bi-whatsapp"></strong>
-                            <a target="_blank" href="https://wa.me/79287340803" class="text-white">79287340803</a>
+                            <a target="_blank" href="https://wa.me/79287340803" class="text-white">7(928)734-08-03</a>
                         </p>
 
 
@@ -283,7 +323,7 @@
 
                         <p class="d-flex mb-0">
                             <strong class="me-2 bi bi-whatsapp"></strong>
-                            <a target="_blank" href="https://wa.me/79287340803" class="text-white">79287340803</a>
+                            <a target="_blank" href="https://wa.me/79282343232" class="text-white">7(928)234-32-32</a>
                         </p>
 
 
@@ -319,4 +359,5 @@
     <script src="js/custom.js"></script>
 
 </body>
+
 </html>

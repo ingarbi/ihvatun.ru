@@ -15,6 +15,7 @@ https://www.tooplate.com/view/2137-barista-cafe
   --secondary-color:              #DDA15E;
   --section-bg-color:             #b78752;
   --custom-btn-bg-color:          #BC6C25;
+  --custom-btn-bg-color-wa:       #00a537;
   --custom-btn-bg-hover-color:    #DDA15E;
   --dark-color:                   #000000;
   --p-color:                      #717275;
@@ -289,7 +290,7 @@ strong {
   font-weight: var(--font-weight-bold);
   line-height: normal;
   transition: all 0.3s;
-  padding: 12px 28px;
+  padding: 6px 14px;
 }
 
 .custom-btn:hover {
@@ -308,6 +309,16 @@ strong {
   color: var(--secondary-color);
 }
 
+.custom-border-btn-wa {
+  background: var(--custom-btn-bg-color-wa);
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
+}
+
+.custom-border-btn-wa:hover {
+  background: var(--white-color);
+  color: var(--secondary-color);
+}
 .custom-btn-bg-white {
   border-color: var(--white-color);
   color: var(--white-color);
@@ -685,7 +696,7 @@ strong {
   OUR MENU              
 -----------------------------------------*/
 .menu-section {
-  background-image: url('../images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg');
+  background-color: var(--secondary-color);
   background-repeat: no-repeat;
   background-size: cover;
 }
